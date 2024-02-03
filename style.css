@@ -1,0 +1,291 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000033;
+    padding: 20px;
+    z-index: 1000;
+  }
+
+  
+  
+  .header.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+  }
+  
+  .navbar-brand a,
+  .navbar-list a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .navbar-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-list li {
+    display: inline;
+    margin-left: 20px;
+  }
+  
+  .navbar-list a {
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-list li a:hover {
+    background-color: #e6e4bb;
+    border-radius: 5px;
+  }
+
+
+
+#home {
+    
+    background-color: #e6e4bb;
+    padding: 50px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #000;
+    
+}
+
+.home.container{
+    display: flex;
+    min-height: 100vh;
+    padding: 0 50px;
+    margin-top: 60px;
+    justify-content: flex-start;
+
+}
+
+#home h1 {
+    margin: 0;
+}
+
+#home h1.hello {
+    font-size: 40px;
+    position: absolute;
+    top: 30%;
+    left: 12.5%;
+    transform: translate(-50%, -50%);
+}
+
+#home h1.name {
+    font-size: 50px;
+    position: absolute;
+    top: 30%;
+    left: -10%;
+    transform: translate(50%, 50%);
+}
+
+#home a.about{
+    font-size: 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    text-decoration: none;
+    position: absolute;
+    top: 40%;
+    left: 3.5%;
+    transform: translate(50%, 50%);
+}
+
+#home h1.hello,
+#home h1.name, 
+#home a.about,
+#home .profile img {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#home .profile img{
+    position: absolute;
+    top: -5%;
+    left: 45%;
+    transform: translate(50%, 50%);
+    width: 25%;
+    height: auto;
+    border-width: 2px;
+    border-style: double;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: rgb(0, 0, 0);
+    }
+
+#home a.about:hover {
+    background-color: #555;
+    color: white;
+}
+
+#projects {
+    background-color: #e6e4bb;
+    padding: 50px 0;
+    color: #000;
+}
+
+.project.container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 50px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.all-project {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#projects h1.ptitle{
+  font-size: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    align-items: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#projects .projimg img {
+    border-width: 2px;
+    border-style: double;
+    border-radius: 10px;
+    color: #e6e4bb;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.item h1{
+  text-align: center;
+  font-size: large;
+}
+
+.item p{
+  text-align: justify;
+}
+
+#projects .projimg img {
+  width: 100%; 
+  height: auto;
+}
+
+
+#about-me {
+    background-color: #e6e4bb;
+    padding: 50px 0;
+    color: #000;
+}
+
+.about-me.container{
+  
+    display: flex;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+
+.infos,
+.contact {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+}
+
+#about-me h1{
+  font-size: 45px;
+}
+
+.infos p{
+  font-size: 30px;
+  text-align: justify;
+  margin: 10px;
+  
+}
+
+.infos a{
+  text-decoration: none;
+  color: #000;
+  margin: 10px;
+  font-size: 35px;
+  font-size: 30px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  padding: 5px 15px;
+}
+
+#about-me a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.contact a{
+  font-size: 35px;
+  margin: 10px;
+  text-decoration: none;
+  color: #000;
+
+}
+
+#footer {
+    background-color: #000033;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: auto;
+    text-align: center;
+}
+
